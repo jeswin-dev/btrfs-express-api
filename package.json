@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
-    "random-file-generator": "^0.1.3"
+    "random-file-generator": "^0.1.3",
+    "shelljs": "^0.8.5"
   }
 }
