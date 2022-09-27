@@ -1,0 +1,14 @@
+config:
+  target: "http://52.54.211.181:3000"
+  phases:
+    - duration: 60
+      arrivalCount: 40
+  processor: "conversion.js"
+
+scenarios:
+  - name: "Add big files to disk"
+    flow:
+      - function: "setCount"
+      - get:
+          url: "/addBigFile/{{count}}"
+
